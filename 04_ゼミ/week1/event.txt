@@ -1,0 +1,18 @@
+click
+クリックしたとき
+dblclick
+ダブルクリックしたとき
+mouseover
+マウスが重なったとき
+input 要素で起きるイベント
+input
+値が変化したとき
+change
+値が確定したとき
+focus
+フォーカスしたとき
+blur
+フォーカスが外れたとき
+document で起きるイベント
+keydown
+キーが押されたとき
