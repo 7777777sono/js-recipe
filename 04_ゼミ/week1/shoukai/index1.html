@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>僕の趣味はなんでしょうか？</h1>
+    <div id="display">
+      <h2>秘密です</h2>
+    </div>
+    <img
+      src="https://pbs.twimg.com/profile_images/1077564064740519937/RxuwX3WI_400x400.jpg"
+      alt=""
+      id="image"
+    />
+
+    <button id="anime">?1</button>
+    <button id="manga">?2</button>
+    <button id="sport">?3</button>
+
+    <script>
+      const display = document.getElementById("display");
+      const animeButton = document.getElementById("anime");
+      const mangaButton = document.getElementById("manga");
+      const sportButton = document.getElementById("sport");
+      const image = document.getElementById("image");
+
+      animeButton.onclick = function () {
+        image.src =
+          "https://www.supersports.com/im/PfL5nqIG76TckzRqQyrmErxBFSl3n4EheEQBmRbc.jpg";
+          display.textContent = "違いますぅ";
+    };
+
+      mangaButton.onclick = function () {
+        image.src =
+          "https://zukan.pokemon.co.jp/zukan-api/up/images/index/20ce9fd2924876f48ad8e54465e6bb10.png";
+        display.textContent = "正解です";
+      };
+
+      sportButton.onclick = function () {
+        image.src =
+          "https://animeanime.jp/imgs/p/jtKDOVlKAvjRrNw8SXAVejagI61Nrq_oqaqr/345126.jpg";
+          display.textContent = "違いますぅ";
+      };
+    </script>
+  </body>
+</html>
