@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h1>僕の趣味はなんでしょうか？</h1>
+    <div id="display">
+      <h2>秘密です</h2>
+    </div>
+
+    <button id="anime">アニメを見ること</button>
+    <button id="manga">漫画を読むこと</button>
+    <button id="sport">スポーツをすること</button>
+
+    <script>
+      const display = document.getElementById("display");
+      const animeButton = document.getElementById("anime");
+      const mangaButton = document.getElementById("manga");
+      const sportButton = document.getElementById("sport");
+
+      animeButton.onclick = function () {
+        display.textContent = "違いますぅ";
+      };
+      mangaButton.onclick = function () {
+        display.textContent = "正解です";
+      };
+      sportButton.onclick = function () {
+        display.textContent = "違いますぅ";
+      };
+    </script>
+  </body>
+</html>
+
+<!-- === このメッセージは消しても構いません === -->
+
+<!-- GeekSalon WebExpertコースのペアプロで使用するためのテンプレートです。 -->
+<!-- ✅ 👈のメニューから一番下の「👬」のアイコンを選んで -->
+<!--    Live Modeを「Everyone cab edit」に変更した後、 -->
+<!--    「You're live!」の下、「Stop Session」の上、にあるリンクをShareしましょう -->
+<!-- ✅ CodeSandBoxはVS Codeとほぼ同じ様に扱えます。 -->
+<!-- ✅ 👉にある画面が実行画面です。 -->
+<!-- ✅ 👉の👇にある「Console」が実行時のConsoleになります。 -->
+<!--    たまに挙動がおかしい時があるので気をつけましょう。 -->
+
+<!-- =============================== -->
