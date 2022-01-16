@@ -4,6 +4,7 @@ const minusButton = document.getElementById("minus-button")
 const multiplicationButton = document.getElementById("multiplication-button")
 const divisionButton = document.getElementById("division-button")
 const equalButton = document.getElementById("equal-button")
+const initializationButton = document.getElementById("initialization-button")
 const oneButton = document.getElementById("one-button")
 const twoButton = document.getElementById("two-button")
 const threeButton = document.getElementById("three-button")
@@ -18,7 +19,6 @@ let count=0
 let pre=0  //先に入力した値を格納しておく変数
 let operator=""  //演算子を格納する変数 
 let equal=false
-//let no_num=false
 
 // ボタンをクリックしたときの処理を登録
 
@@ -79,8 +79,17 @@ equalButton.onclick=function(){
     count=0
 }
 
+initializationButton.onclick=function(){
+    count=0
+    pre=0
+    operator=""
+    equal=false
+    display.textContent=count
+}
+
 oneButton.onclick=function(){
     const num=1
+    equal=false
     if(count==0){
         count=num
     }
@@ -92,6 +101,7 @@ oneButton.onclick=function(){
 
 twoButton.onclick=function(){
     const num=2
+    equal=false
     if(count==0){
         count=num
     }
@@ -103,6 +113,7 @@ twoButton.onclick=function(){
 
 threeButton.onclick=function(){
     const num=3
+    equal=false
     if(count==0){
         count=num
     }
@@ -114,6 +125,7 @@ threeButton.onclick=function(){
 
 fourButton.onclick=function(){
     const num=4
+    equal=false
     if(count==0){
         count=num
     }
@@ -125,6 +137,7 @@ fourButton.onclick=function(){
 
 fiveButton.onclick=function(){
     const num=5
+    equal=false
     if(count==0){
         count=num
     }
@@ -136,6 +149,7 @@ fiveButton.onclick=function(){
 
 sixButton.onclick=function(){
     const num=6
+    equal=false
     if(count==0){
         count=num
     }
@@ -147,6 +161,7 @@ sixButton.onclick=function(){
 
 sevenButton.onclick=function(){
     const num=7
+    equal=false
     if(count==0){
         count=num
     }
@@ -158,6 +173,7 @@ sevenButton.onclick=function(){
 
 eightButton.onclick=function(){
     const num=8
+    equal=false
     if(count==0){
         count=num
     }
@@ -169,6 +185,7 @@ eightButton.onclick=function(){
 
 nineButton.onclick=function(){
     const num=9
+    equal=false
     if(count==0){
         count=num
     }
