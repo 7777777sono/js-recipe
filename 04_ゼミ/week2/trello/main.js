@@ -12,6 +12,18 @@ addButton.onclick = function() {
     inputElement.value = ""
 }
 
+document.onkeydown=function(e){
+    if(e.key==="Enter"){
+        // カードを作成する
+        const card = createCard(inputElement.value)
+        container.append(card)
+
+        // 入力欄を空にする
+        inputElement.value = ""
+    }
+    console.log(e.key)
+}
+
 // 共通の処理：テキストからカードを作成する
 const createCard = function(text) {
     // カードの枠を作る
