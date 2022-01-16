@@ -12,8 +12,8 @@ addButton.onclick = function() {
     inputElement.value = ""
 }
 
-document.onkeydown=function(e){
-    if(e.key==="Enter"){
+inputElement.onkeydown=function(e){
+    if(e.key==="Enter"&&inputElement.value!=""){
         // カードを作成する
         const card = createCard(inputElement.value)
         container.append(card)
