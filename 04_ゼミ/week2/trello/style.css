@@ -1,0 +1,12 @@
+.list-container{
+    float: left;
+    padding: 20px;  /* paddingは余白を作る */
+}
+
+.card{
+    display: flex;  /* classがcardのところを横並びにする */
+}
+
+.delete{
+    padding-left: 122px;
+}
