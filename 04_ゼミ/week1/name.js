@@ -6,4 +6,5 @@ const character={
     hobbies: ["寝る","起きる","挨拶する"]
 }
 console.log(character.mother.name)
+console.log(character["name"])
 console.log(character.hobbies[0])
