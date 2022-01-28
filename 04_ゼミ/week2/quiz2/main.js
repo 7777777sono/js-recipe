@@ -12,7 +12,7 @@ const quiz = {
     image: "https://manga-netabare-kanso.com/wp-content/uploads/2020/07/EKI1l3kUcAMq7bf.jpg",
     choices: [
         {
-            text: "無残",
+            text: "無惨",
             feedback:
                 "残念！そいつではないよ",
         },
