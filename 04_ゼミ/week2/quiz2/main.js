@@ -1,3 +1,16 @@
+const buttonPosition=document.getElementById("button-position")
+let choice_num=4
+
+const buttonCreate=function(){
+    for(let i=1;i<=choice_num;i++){
+        const list=document.createElement("button")
+        list.id="choice-"+i
+        buttonPosition.append(list)
+    }
+}
+
+buttonCreate()
+
 const quizText = document.getElementById("quiz-text")
 const quizImage = document.getElementById("quiz-image")
 const choice1 = document.getElementById("choice-1")
@@ -65,7 +78,7 @@ choice3.onclick = function() {
     choose(2)
 }
 
-choice4.onclick=function(){
+choice4.onclick = function(){
     choose(3)
 }
 
