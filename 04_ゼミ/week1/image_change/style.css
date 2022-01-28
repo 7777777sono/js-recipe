@@ -8,6 +8,16 @@
     border-radius: 50px;
 }
 
+.triangle{
+    width: 100px; /* (2√3)*h/3 */
+    height: 100px; /* 高さ */
+    background-color: transparent;
+    border-bottom: 100px solid black; /* 高さ */
+    border-right: 50px solid transparent; /* (2√3)*height/2/3 */
+    border-left: 50px solid transparent; /* (2√3)*height/2/3 */
+    box-sizing: border-box;
+}
+
 .transition{
     transition: all 1s;
 }
