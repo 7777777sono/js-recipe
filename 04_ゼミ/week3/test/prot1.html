@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="up">▲</button>
+        <h3 id="one">1</h3>
+        <h3 id="two">2</h3>
+        <h3 id="three">3</h3>
+        <button id="down">▼</button>
+    </div>
+    <script>
+        const max=3
+        const min=1
+        let currentStatus=1
+
+        const upButton=document.getElementById("up")
+        const downButton=document.getElementById("down")
+        const one=document.getElementById("one")
+        const two=document.getElementById("two")
+        const three=document.getElementById("three")
+
+        one.style.color="aqua"
+
+        upButton.onclick=function(){
+            if(currentStatus<max){
+                currentStatus++
+            }
+            if(currentStatus===1){
+                one.style.color="aqua"
+                two.style.color=null
+                three.style.color=null
+            }
+            else if(currentStatus===2){
+                one.style.color=null
+                two.style.color="aqua"
+                three.style.color=null
+            }
+            else if(currentStatus===3){
+                one.style.color=null
+                two.style.color=null
+                three.style.color="aqua"
+            }
+        }
+
+        downButton.onclick=function(){
+            if(currentStatus>min){
+                currentStatus--
+            }
+            if(currentStatus===1){
+                one.style.color="aqua"
+                two.style.color=null
+                three.style.color=null
+            }
+            else if(currentStatus===2){
+                one.style.color=null
+                two.style.color="aqua"
+                three.style.color=null
+            }
+            else if(currentStatus===3){
+                one.style.color=null
+                two.style.color=null
+                three.style.color="aqua"
+            }
+        }
+
+    </script>
+</body>
+</html>
