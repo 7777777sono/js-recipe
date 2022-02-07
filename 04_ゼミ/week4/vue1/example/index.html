@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vueの基礎</title>
+  </head>
+  <body>
+    <h1>Vueの基礎</h1>
+    <!-- ↓ここに追加する -->
+    <div id="app">
+        <div>{{ count }}</div>
+        <button v-on:click="countUp">＋１</button>
+    </div>
+    <script src="https://unpkg.com/vue@3.2.20"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
