@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATMアプリ</title>
+</head>
+<body>
+    <section id="atm">
+        <div>
+            <h1>入力画面</h1>
+            <input type="number" v-model="inputMoney">
+            <h3>入力額:{{inputMoney}}円</h3>
+            <button v-on:click="payment">入金</button>
+            <button v-on:click="investment" v-bind:disabled="currentMoney<=0">出金</button>
+        </div>
+
+        <div>
+            <h1>口座残高</h1>
+            <h3>残高:{{currentMoney}}円</h3>
+        </div>
+
+        <div>
+            <h1>取引画面</h1>
+            <div v-for="log in logs">
+                <div>日付:{{log.date}}</div>
+                <div>操作:{{log.sousa}}</div>
+                <div>金額:{{log.money}}</div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/vue@3.2.20"></script>
+    <script src="main.js"></script>
+</body>
+</html>
