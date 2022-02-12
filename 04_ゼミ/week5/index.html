@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vue カウンター</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>
+        Vueカウンター
+      </h1>
+      <div>
+        🔥{{ judge }}🔥
+      </div>
+      <button v-on:click="countUp">+1</button>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            count: 0
+          };
+        },
+        methods: {
+          countUp() {
+            this.count += 1;
+          }
+        },
+        computed: {
+          judge: function () {
+            if (this.count % 3 === 0 && this.count > 0) {
+              return this.count + "!!!!!";
+            }
+            return this.count;
+          }
+        },
+        created: function () {
+          this.count = 100;
+        }
+      }).mount("#app");
+    </script>
+  </body>
+</html>
