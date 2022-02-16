@@ -3,11 +3,11 @@
     <div class="atama">
       <div>😊</div>
     </div>
-    <div class="karada" v-on:click="change" v-if="judge">
-      💪{{cloth}}💪
+    <div class="karada" v-if="judge">
+      💪<div class="cloth" v-on:click="change">{{cloth}}</div>💪
     </div>
     <div class="karada" v-on:click="change" v-else>
-      💪{{currentCloth}}💪
+      💪<div class="cloth" v-on:click="change">{{currentCloth}}</div>💪
     </div>
     <div class="ashi">
       <div>🦵🦵</div>
@@ -42,7 +42,7 @@
         },
         computed: {
             judge: function(){
-                if(this.cloth===this.currentCloth||this.currentCloth===""){
+                if(this.currentCloth===""){
                     return true
                 }
                 else{
@@ -61,5 +61,9 @@
   width: 100%;
   font-size: 3rem;
   text-align: center;
+}
+
+.cloth{
+  display: inline;  
 }
 </style>
